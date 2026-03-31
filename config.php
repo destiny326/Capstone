@@ -10,10 +10,10 @@
 // ----------------------------------------------------------
 
 
-define('AZURE_CLIENT_ID',     getenv('AZURE_CLIENT_ID')     ?: 'YOUR_AZURE_CLIENT_ID');
-define('AZURE_CLIENT_SECRET', getenv('AZURE_CLIENT_SECRET') ?: 'YOUR_AZURE_CLIENT_SECRET');
-define('AZURE_TENANT_ID',     getenv('AZURE_TENANT_ID')     ?: 'common'); // or your org tenant ID
-define('AZURE_REDIRECT_URI',  getenv('AZURE_REDIRECT_URI')  ?: 'https://yourdomain.com/callback.php');
+define('AZURE_CLIENT_ID',     getenv('AZURE_CLIENT_ID')     ?: 'bec23487-882d-422d-916f-e00d8f7187fe');
+define('AZURE_CLIENT_SECRET', getenv('AZURE_CLIENT_SECRET') ?: 'b4052253-1f9c-48ed-a7ba-a5f3714bc0e3');
+define('AZURE_TENANT_ID',     getenv('AZURE_TENANT_ID')     ?: '2c0f2177-c2a8-40d2-8f47-7252b8f87e6c'); // or your org tenant ID
+define('AZURE_REDIRECT_URI',  getenv('AZURE_REDIRECT_URI')  ?: 'http://localhost/TamccFoodie/Capstone/callback.php');
 
 define('AZURE_AUTHORITY',     'https://login.microsoftonline.com/' . AZURE_TENANT_ID);
 define('AZURE_SCOPES',        'openid profile email User.Read');
