@@ -8,6 +8,8 @@
 // Azure AD / Microsoft Identity Platform
 // Register your app at: https://portal.azure.com
 // ----------------------------------------------------------
+
+
 define('AZURE_CLIENT_ID',     getenv('AZURE_CLIENT_ID')     ?: 'YOUR_AZURE_CLIENT_ID');
 define('AZURE_CLIENT_SECRET', getenv('AZURE_CLIENT_SECRET') ?: 'YOUR_AZURE_CLIENT_SECRET');
 define('AZURE_TENANT_ID',     getenv('AZURE_TENANT_ID')     ?: 'common'); // or your org tenant ID
@@ -20,6 +22,7 @@ define('AZURE_SCOPES',        'openid profile email User.Read');
 // Stripe Payment Gateway
 // Get keys from: https://dashboard.stripe.com/apikeys
 // ----------------------------------------------------------
+
 define('STRIPE_SECRET_KEY',      getenv('STRIPE_SECRET_KEY')      ?: 'sk_test_YOUR_SECRET_KEY');
 define('STRIPE_PUBLISHABLE_KEY', getenv('STRIPE_PUBLISHABLE_KEY') ?: 'pk_test_YOUR_PUBLISHABLE_KEY');
 define('STRIPE_WEBHOOK_SECRET',  getenv('STRIPE_WEBHOOK_SECRET')  ?: 'whsec_YOUR_WEBHOOK_SECRET');
